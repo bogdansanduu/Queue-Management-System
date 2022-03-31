@@ -40,7 +40,7 @@ public class SimulationManager implements Runnable {
         this.generatedTasks = new ArrayList<>();
         this.output = new ArrayList<>();
         generateNRandomTasks();
-        this.scheduler = new Scheduler(15, this.numberOfServers);
+        this.scheduler = new Scheduler(1000, this.numberOfServers);
         this.scheduler.changeStrategy(selectionPolicy);
         for (Server server : scheduler.getServers()) {
             Server.setQueueNrCounter(1);

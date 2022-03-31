@@ -68,7 +68,7 @@ public class Controller implements ActionListener {
     }
 
     private void start(int maxSTI, int minSTI, int maxATI, int minATI, int clientsNrI, int queuesNrI, SelectionPolicy selectionPolicy, SimulationFrame view, int maxSimTime) {
-        SwingWorker<Void, String> worker = new SwingWorker<>() {
+        SwingWorker<Void, String> worker = new SwingWorker<Void, String>() {
             SimulationManager simulationManager;
 
             @Override
